@@ -1,0 +1,10 @@
+{
+    "Version": "2021-09-30",
+    "Statement": [{
+      "Effect": "Allow",
+      "Action": "dynamodb:*",
+      "Resource": "*"
+    }]
+  }
+
+  aws iam create-policy --policy-name my-iot-policy --policy-document file://my-iot-policy.json

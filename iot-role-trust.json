@@ -1,0 +1,12 @@
+{
+    "Version":"2021-09-30",
+    "Statement":[{
+        "Effect": "Allow",
+        "Principal": {
+          "Service": "iot.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole"
+    }]
+  }
+
+  aws iam create-role --role-name my-iot-role --assume-role-policy-document file://iot-role-trust.json
